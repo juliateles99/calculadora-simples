@@ -26,6 +26,40 @@ public class Main {
                 System.out.println("Encerrando..");
                 break;
             }
+
+
+            System.out.println("Digite o primeiro número: ");
+            int primeiroNumero = scanner.nextInt();
+
+            System.out.println("Digite o segundo número: ");
+            int segundoNumero = scanner.nextInt();
+
+            switch (operacao) {
+                case 1:
+                    int respostaAdicao = primeiroNumero + segundoNumero;
+                    System.out.println("A resposta de " + primeiroNumero + " + " + segundoNumero + " é: " + respostaAdicao);
+                    break;
+                case 2:
+                    int respostaSubtracao = primeiroNumero - segundoNumero;
+                    System.out.println("A resposta de " + primeiroNumero + " - " + segundoNumero + " é: " + respostaSubtracao);
+                    break;
+                case 3:
+                    int respostaMultiplicação = primeiroNumero * segundoNumero;
+                    System.out.println("A resposta de " + primeiroNumero + " * " + segundoNumero + " é: " + respostaMultiplicação);
+                    break;
+                case 4:
+                    if (segundoNumero != 0) {
+                        int respostaDivisao = primeiroNumero / segundoNumero;
+                        System.out.println("A resposta de " + primeiroNumero + " / " + segundoNumero + " é: " + respostaDivisao);
+                        break;
+                    } else {
+                        System.out.println("Não é permitido divisão por 0.");
+                    }
+                default:
+                    System.out.println("Operação inválida.");
+            }
         }
+        scanner.close();
+
     }
 }
