@@ -31,6 +31,3 @@ Antes de rodar a aplicação, certifique-se de ter:
 Adicionar suporte para operações com números decimais.
 Criar uma interface gráfica com JavaFX ou Swing.
 Implementar testes unitários para garantir a qualidade do código.
-
-## Contribuições
-Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões de melhoria, fique à vontade para abrir uma issue ou enviar um pull request.
